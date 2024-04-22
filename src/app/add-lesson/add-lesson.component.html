@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6"> 
+        <h1>Add New Lesson</h1>
+        <form (ngSubmit)="onSubmit()" class="needs-validation" novalidate>
+          <div class="form-group">
+            <label for="lessonCode">Lesson Code:</label>
+            <input type="text" id="lessonCode" name="lessonCode" [(ngModel)]="lessonCode" class="form-control" required>
+            <div class="invalid-feedback">Please provide a lesson code.</div>
+          </div>
+          <div class="form-group">
+            <label for="lessonName">Lesson Name:</label>
+            <input type="text" id="lessonName" name="lessonName" [(ngModel)]="lessonName" class="form-control" required>
+            <div class="invalid-feedback">Please provide a lesson name.</div>
+          </div>
+          <div class="form-group">
+            <label for="class">Class:</label>
+            <input type="number" id="class" name="class" [(ngModel)]="class" class="form-control" required>
+            <div class="invalid-feedback">Please provide a class.</div>
+          </div>
+          <div class="form-group">
+            <label for="teacherId">Teacher Id:</label>
+            <input type="number" id="teacherId" name="teacherId" [(ngModel)]="teacherId" class="form-control" required>
+            <div class="invalid-feedback">Please provide a teacher id.</div>
+          </div>
+          <button type="submit" class="btn btn-primary">Add New Lesson</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  

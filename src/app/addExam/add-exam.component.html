@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-6"> <!-- Adjust the width as needed -->
+      <h1>Add New Exam</h1>
+      <form (ngSubmit)="onSubmit()" class="needs-validation" novalidate>
+        <div class="form-group">
+          <label for="lessonCode">Lesson Code:</label>
+          <input type="text" id="lessonCode" name="lessonCode" [(ngModel)]="lessonCode" class="form-control" required>
+          <div class="invalid-feedback">Please provide a lesson code.</div>
+        </div>
+        <div class="form-group">
+          <label for="studentNumber">Student Number:</label>
+          <input type="number" id="studentNumber" name="studentNumber" [(ngModel)]="studentNumber" class="form-control" required>
+          <div class="invalid-feedback">Please provide a student number.</div>
+        </div>
+        <div class="form-group">
+          <label for="examDate">Exam Date:</label>
+          <input type="date" id="examDate" name="examDate" [(ngModel)]="examDate" class="form-control" required>
+          <div class="invalid-feedback">Please provide an exam date.</div>
+        </div>
+        <div class="form-group">
+          <label for="mark">Mark:</label>
+          <input type="number" id="mark" name="mark" [(ngModel)]="mark" class="form-control" required>
+          <div class="invalid-feedback">Please provide a mark.</div>
+        </div>
+        <button type="submit" class="btn btn-primary">Add New Exam</button>
+      </form>
+    </div>
+  </div>
+</div>

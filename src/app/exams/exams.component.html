@@ -1,0 +1,50 @@
+<section class="panel">
+    <header class="panel-heading">
+        <h1>Exams Table</h1>
+    </header>
+    <div class="panel-body">
+        <div class="adv-table editable-table">
+            <div class="clearfix">
+                <div class="d-flex justify-content-end">
+                    <a href="./add-exam">
+                    <button id="editable-sample_new" class="btn btn-success">
+                        Add New Exam 
+                        <i class="fa fa-plus"></i>
+                    </button>
+                    </a>
+                </div>
+            </div>
+            <div class="space15"></div>
+            <div class="table-responsive">
+                <table class="table table-striped table-hover table-bordered" id="editable-sample">
+                    <thead>
+                        <tr>
+                            <th>ExamId</th>
+                            <th>LessonCode</th>
+                            <th>StudentNumber</th>
+                            <th>ExamDate</th>
+                            <th>Mark</th>
+                            <th>EDIT</th>
+                            <th>DELETE</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let exam of exams">
+                            <td>{{exam.examId}}</td>
+                            <td>{{exam.lessonCode}}</td>
+                            <td>{{exam.studentNumber}}</td>
+                            <td>{{exam.examDate}}</td>
+                            <td>{{exam.mark}}</td>
+                            <td><a class="edit" href="javascript:;">Edit</a></td>
+                            <td><a class="delete" href="javascript:;">Delete</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+  
